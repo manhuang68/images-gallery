@@ -1,8 +1,8 @@
 import React from 'react';
 import { Container, Navbar } from 'react-bootstrap';
-
+import { ReactComponent as Logo } from '../images/logo.svg';
 const navbarStyle = {
-  backgroundColor: 'lightblue',
+  backgroundColor: '#eeeeee',
 };
 
 const Header = (propsi) => {
@@ -10,7 +10,7 @@ const Header = (propsi) => {
   return (
     <Navbar style={navbarStyle} variant="light">
       <Container>
-        <Navbar.Brand href="#home">{titles}</Navbar.Brand>
+        <Logo style={{ maxWidth: '12rem', maxHeight: '2rem' }} />
       </Container>
     </Navbar>
   );
